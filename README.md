@@ -7,6 +7,7 @@ This program allows the user to watch Youtube videos from the comfort of their t
 
 Webscrapes links from Youtube based off of your search, and downloads the desired video. Taking advantage of Youtube's API to grab video titles and channels.
 
+<br>
 
-https://user-images.githubusercontent.com/85767913/155042985-1d0392c7-a373-4718-973a-9e1999bd67bd.mp4
+https://user-images.githubusercontent.com/85767913/155043122-fedab98f-473c-4d93-b3ab-71240359792b.mp4
 
