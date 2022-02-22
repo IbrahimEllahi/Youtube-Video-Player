@@ -14,7 +14,7 @@ Use `pip install requests, pytube, ffpyplayer, opencv-python` to install all nec
 
 ## How it works
 
-Webscrapes links from Youtube based off of your search, and downloads the desired video. Taking advantage of Youtube's API to grab video titles and channels.
+Webscrapes links from Youtube based off of your search, and downloads the desired video. Taking advantage of Youtube's API to grab video titles and channels. Video is played using OpenCV.
 
 <br>
 
