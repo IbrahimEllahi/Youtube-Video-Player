@@ -1,7 +1,8 @@
 # Youtube-Video-Player
 This program allows the user to watch Youtube videos from the comfort of their `terminal`. No browser and no other software required!
 
-![image](https://user-images.githubusercontent.com/85767913/155043423-5ce8aafd-1d9f-4b7f-acb4-fd9cdf3acad9.png)
+
+![image](https://user-images.githubusercontent.com/85767913/155043609-778fc4d2-a878-48df-b686-71ced7678a37.jpeg)
 
 <br>
 
