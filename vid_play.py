@@ -11,7 +11,7 @@ import time
 
 
 
-KEY = "AIzaSyCDmu93cWKRtYa3409SY67-ZUol_rHODIw"
+KEY = API_KEY
 
 class Video:
     
