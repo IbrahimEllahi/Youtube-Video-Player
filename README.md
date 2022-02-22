@@ -1,5 +1,11 @@
 # Youtube-Video-Player
-This program allows the user to watch Youtube videos from the comfort of their terminal. No browser and no other software required!
+This program allows the user to watch Youtube videos from the comfort of their `terminal`. No browser and no other software required!
+
+<br>
+
+## Setup
+
+Use `pip install requests, pytube, ffpyplayer, opencv-python` to install all necessary packages
 
 <br>
 
