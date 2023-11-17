@@ -10,7 +10,6 @@ from ffpyplayer.player import MediaPlayer
 import time
 
 
-
 KEY = API_KEY
 
 class Video:
@@ -88,12 +87,8 @@ class Play:
 
 play = Play()
 
-for path in list(filter(lambda x: '.mp4' in x,listdir())): remove(path)
+for path in list(filter(lambda x: '.mp4' in x,listdir())): 
+    remove(path)
 
 YouTube(play.find(input('What do you feel like watching? '))).streams.get_highest_resolution().download()
-
 play.play(list(filter(lambda x: '.mp4' in x,listdir()))[0])
-
-
-
-
