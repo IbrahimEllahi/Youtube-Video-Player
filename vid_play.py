@@ -27,19 +27,13 @@ class Video:
     def get_data(self, title):
 
         search = '+'.join(title.split())
-
         url = f"https://www.youtube.com/results?search_query={search}"
         html = requests.get(url).text
         video_ids = re.findall(r"watch\?v=(\S{11})", html)
-        
 
         return [(self.info(id_,"title")+ ' - [' +self.info(id_,"channelTitle") + ']', "https://www.youtube.com/watch?v=" + id_) for id_ in video_ids[:6]]
 
-
-
-
 vid = Video(KEY)
-
 
 class Play:
     
@@ -50,16 +44,13 @@ class Play:
             if inp.isdigit() and int(inp)>=1 and int(inp)<=len(lst):
                 return int(inp)
             
-
     def find(self, title):
 
         data = vid.get_data(title)
-
         for num, (title, link) in enumerate(data):
             print(f"\n {num+1}. {title}")
         
         inp = self.choose(data)
-
         return "\n" + data[inp-1][1]
 
     def play(self, vid_path):
@@ -84,7 +75,6 @@ class Play:
             audio_frame, value = player.get_frame()
             cv.imshow(window,frame)
             
-
             if cv.waitKey(int((1000/fps)-delay)) & 0xFF==ord('d'):
                 cv.destroyAllWindows()
                 break
@@ -94,17 +84,13 @@ class Play:
                 break
             
             end = time.time()
-    
         capture.release()
 
 play = Play()
 
-
-
 for path in list(filter(lambda x: '.mp4' in x,listdir())): remove(path)
 
 YouTube(play.find(input('What do you feel like watching? '))).streams.get_highest_resolution().download()
-
 
 play.play(list(filter(lambda x: '.mp4' in x,listdir()))[0])
 
